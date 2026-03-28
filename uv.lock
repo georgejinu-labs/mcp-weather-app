@@ -614,11 +614,12 @@ wheels = [
 ]
 
 [[package]]
-name = "mcp-app-calculator"
+name = "mcp-weather-app"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "fastmcp" },
+    { name = "httpx" },
     { name = "mcp" },
 ]
 
@@ -630,6 +631,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "fastmcp", specifier = ">=3.1.1" },
+    { name = "httpx", specifier = ">=0.27.0" },
     { name = "mcp", specifier = ">=1.26.0" },
 ]
 
